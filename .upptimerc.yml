@@ -1,0 +1,91 @@
+# Upptime configuration
+# https://upptime.js.org/docs/configuration
+
+owner: Mentat-Lab
+repo: status
+
+# Custom domain
+cname: status.preclinical.dev
+
+# Status page settings
+sites:
+  - name: Dashboard
+    url: https://app.preclinical.dev
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+      - 307
+
+  - name: Public API
+    url: https://app.preclinical.dev/api/v1/tests
+    method: GET
+    headers:
+      - "Content-Type: application/json"
+    expectedStatusCodes:
+      - 401
+    # 401 = auth required = API is responding correctly
+
+  - name: Text Worker
+    url: https://tester-text-worker.fly.dev/health
+
+  - name: RTC Worker
+    url: https://tester-livekit-worker.fly.dev/health
+
+  - name: Grader Worker
+    url: https://grader-agent.fly.dev/health
+
+  - name: Edge Functions
+    url: https://agngejtimbfhzazjcbsh.supabase.co/functions/v1/public/tests
+    method: GET
+    expectedStatusCodes:
+      - 401
+
+# Status page customization
+status-website:
+  cname: status.preclinical.dev
+  name: Preclinical Status
+  introTitle: "**Preclinical** is the healthcare AI agent testing platform"
+  introMessage: This page shows real-time status and uptime for all Preclinical services. [Visit Preclinical](https://preclinical.dev) | [Docs](https://docs.preclinical.co)
+  theme: light
+  navbar:
+    - title: Homepage
+      href: https://preclinical.dev
+    - title: Docs
+      href: https://docs.preclinical.co
+    - title: Support
+      href: mailto:support@mentat-lab.com
+  favicon: https://preclinical.dev/favicon.svg
+  logoUrl: https://preclinical.dev/favicon.svg
+
+# Notifications (optional - can add Slack/email later)
+# notifications:
+#   - type: slack
+#     channel: C0XXXXXXXXX
+#     bot-token: $SLACK_BOT_TOKEN
+
+# Incident reports
+workflowSchedule:
+  graphs: "0 0 * * *"       # Generate graphs daily
+  responseTime: "0 23 * * *" # Response time daily
+  staticSite: "0 1 * * *"   # Rebuild site daily
+  summary: "0 0 * * *"      # Summary daily
+  updateTemplate: "0 0 * * *"
+  updates: "*/5 * * * *"    # Check every 5 minutes
+
+# Commits configuration
+commitMessages:
+  statusChange: "$PREFIX $SITE_NAME is $STATUS ($RESPONSE_CODE in $RESPONSE_TIME ms)"
+  startPrefix: "🟩"
+  endPrefix: "🟥"
+
+# Uptime badge style
+i18n:
+  activeIncidents: Active incidents
+  pastIncidents: Past incidents
+  pastIncidentsResolved: All systems are operational
+  liveStatus: Live status
+  allSystemsOperational: All systems operational
+  degradedPerformance: Degraded performance
+  completeOutage: Complete outage
+  partialOutage: Partial outage

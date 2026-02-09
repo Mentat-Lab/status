@@ -1,0 +1,19 @@
+name: Static Site CI
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+  repository_dispatch:
+jobs:
+  release:
+    name: Build and deploy status website
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: upptime/uptime-monitor@v1.38.2
+        with:
+          command: "site"
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
