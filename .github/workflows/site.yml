@@ -11,6 +11,7 @@ jobs:
   release:
     name: Build and deploy status website
     runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
     steps:
       - uses: actions/checkout@v4
         with:
@@ -20,3 +21,7 @@ jobs:
           command: "site"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site/status-page/__sapper__/export
