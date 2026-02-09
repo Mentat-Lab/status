@@ -26,20 +26,6 @@ sites:
       - 401
     # 401 = auth required = API is responding correctly
 
-  - name: Text Worker
-    url: https://tester-text-worker.fly.dev/health
-
-  - name: RTC Worker
-    url: https://tester-livekit-worker.fly.dev/health
-
-  - name: Grader Worker
-    url: https://grader-agent.fly.dev/health
-
-  - name: Edge Functions
-    url: https://agngejtimbfhzazjcbsh.supabase.co/functions/v1/public/tests
-    method: GET
-    expectedStatusCodes:
-      - 401
 
 # Status page customization
 status-website:
