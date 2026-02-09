@@ -4,6 +4,9 @@ on:
     - cron: "0 1 * * *"
   workflow_dispatch:
   repository_dispatch:
+permissions:
+  contents: write
+  pages: write
 jobs:
   release:
     name: Build and deploy status website
@@ -12,8 +15,8 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: upptime/uptime-monitor@v1.38.2
+      - uses: upptime/uptime-monitor@v1.41.0
         with:
           command: "site"
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
