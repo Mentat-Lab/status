@@ -46,13 +46,13 @@ status-website:
   cname: status.preclinical.dev
   name: Preclinical Status
   introTitle: "**Preclinical** is the healthcare AI agent testing platform"
-  introMessage: This page shows real-time status and uptime for all Preclinical services. [Visit Preclinical](https://preclinical.dev) | [Docs](https://docs.preclinical.co)
+  introMessage: This page shows real-time status and uptime for all Preclinical services. [Visit Preclinical](https://preclinical.dev) | [Docs](https://docs.preclinical.dev)
   theme: light
   navbar:
     - title: Homepage
       href: https://preclinical.dev
     - title: Docs
-      href: https://docs.preclinical.co
+      href: https://docs.preclinical.dev
     - title: Support
       href: mailto:support@mentat-lab.com
   favicon: https://preclinical.dev/favicon.svg
