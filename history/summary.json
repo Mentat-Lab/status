@@ -4,18 +4,20 @@
     "url": "https://app.preclinical.dev",
     "icon": "https://icons.duckduckgo.com/ip3/app.preclinical.dev.ico",
     "slug": "dashboard",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1990,
-    "timeDay": 381,
-    "timeWeek": 383,
-    "timeMonth": 1990,
-    "timeYear": 1990,
-    "dailyMinutesDown": {}
+    "time": 1908,
+    "timeDay": 525,
+    "timeWeek": 418,
+    "timeMonth": 1908,
+    "timeYear": 1908,
+    "dailyMinutesDown": {
+      "2026-02-23": 0
+    }
   },
   {
     "name": "Public API",
