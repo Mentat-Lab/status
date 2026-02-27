@@ -5,16 +5,16 @@
     "icon": "https://icons.duckduckgo.com/ip3/app.preclinical.dev.ico",
     "slug": "dashboard",
     "status": "up",
-    "uptime": "99.65%",
+    "uptime": "99.67%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "99.15%",
-    "uptimeMonth": "99.65%",
-    "uptimeYear": "99.65%",
-    "time": 1613,
-    "timeDay": 341,
+    "uptimeMonth": "99.67%",
+    "uptimeYear": "99.67%",
+    "time": 1552,
+    "timeDay": 351,
     "timeWeek": 447,
-    "timeMonth": 1613,
-    "timeYear": 1613,
+    "timeMonth": 1552,
+    "timeYear": 1552,
     "dailyMinutesDown": {
       "2026-02-23": 86
     }
@@ -30,11 +30,11 @@
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
-    "time": 1382,
-    "timeDay": 417,
-    "timeWeek": 1082,
-    "timeMonth": 1382,
-    "timeYear": 1382,
+    "time": 1475,
+    "timeDay": 3156,
+    "timeWeek": 1479,
+    "timeMonth": 1475,
+    "timeYear": 1475,
     "dailyMinutesDown": {}
   }
 ]
