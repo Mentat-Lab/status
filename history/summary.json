@@ -4,18 +4,19 @@
     "url": "https://app.preclinical.dev",
     "icon": "https://icons.duckduckgo.com/ip3/app.preclinical.dev.ico",
     "slug": "dashboard",
-    "status": "up",
-    "uptime": "99.77%",
+    "status": "down",
+    "uptime": "99.78%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
-    "uptimeMonth": "99.77%",
-    "uptimeYear": "99.77%",
+    "uptimeMonth": "99.78%",
+    "uptimeYear": "99.78%",
     "time": 1835,
     "timeDay": 4262,
     "timeWeek": 2882,
     "timeMonth": 1835,
     "timeYear": 1835,
     "dailyMinutesDown": {
+      "2026-03-07": 0,
       "2026-02-23": 86
     }
   },
@@ -24,7 +25,7 @@
     "url": "https://app.preclinical.dev/api/v1/tests",
     "icon": "https://icons.duckduckgo.com/ip3/app.preclinical.dev.ico",
     "slug": "public-api",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
     "uptimeDay": "100.00%",
     "uptimeWeek": "100.00%",
@@ -35,6 +36,8 @@
     "timeWeek": 465,
     "timeMonth": 1172,
     "timeYear": 1172,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2026-03-07": 0
+    }
   }
 ]
